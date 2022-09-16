@@ -1,0 +1,192 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Information Page</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+
+		#container .column {
+			position: relative;
+			float: left;
+		}
+
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+
+		#footer {
+			clear: both;
+		}
+
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+
+		p {
+			color: red;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul a {
+			color: red;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: yellow;
+		}
+
+		#left {
+			background: yellow;
+		}
+
+		#right {
+			background: yellow;
+		}
+
+		#center {
+			background: white;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<header id="header"><p style="color:blue;text-align:center;font-family:Regular Impact;font-size:35px;">M͙U͙M͙B͙A͙I͙ ͙C͙I͙T͙Y͙ ͙M͙E͙M͙O͙R͙I͙A͙L͙ ͙H͙O͙S͙P͙I͙T͙A͙L͙ ͙(͙M͙C͙M͙H͙) ,  ͙N͙a͙r͙i͙m͙a͙n͙ ͙P͙o͙i͙n͙t͙-͙2͙1͙ </p></header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+				<img src="{% static 'C:\Users\Imad\imad hospital man. Django\IMAD MAIN PROJECT\static\images\dr.png' %}">
+
+				<h1>HEALTH TIPS</h1>
+
+				<p>Handwashing with soap and water is one of the most effective ways to prevent the spread of germs.<br> Wash your hands often to stay healthy.
+					<br>National Helpline Numbers
+Ministry of Health and Family Welfare- 1075 / Child Helpline No-1098,Senior Citizens Helpline No -14567, <br>For Psychological Support Helpline No- 08046110007</p>
+
+			</article>
+		</main>
+
+
+		<nav id="left" class="column">
+			<h3>Important Public Health Websites</h3>
+			<ul>
+
+				<li><a href="https://www.who.int/">⦿ Visit WHO | World Health Organization </a></li>
+				<li><a href="https://www.mohfw.gov.in/">⦿ Visit MOHFW | Ministry of Health and Family Welfare </a></li>
+
+			</ul>
+			<h3>Websites for Medicare & Medicaid Services</h3>
+			<ul>
+				<li><a href="https://www.nhp.gov.in/">➼ nhp.com</a></li>
+				<li><a href="https://dhr.gov.in/">➼ dhr.com</a></li>
+				<li><a href="https://main.icmr.nic.in/">➼ icmr.com</a></li>
+			</ul>
+
+			</ul>
+			<h3>Social Media Awarness</h3>
+			<ul>
+				<li><a href="https://twitter.com/mohfw_india">✨ Twitter | Mohfw </a></li>
+				<li><a href="https://www.facebook.com/MoHFWIndia/">✨ Facebook</a></li>
+				<li><a href="https://www.instagram.com/mohfwindia/?hl=en">✨ Instagram </a></li>
+			</ul>
+
+		</nav>
+
+		<div id="right" class="column">
+			<h3>Our Mission <br>( VISION )</h3>
+			<p>➊  To provide Hope, Care and Cure.<br>➋ To provide compassionate, accessible, high quality, cost effective healthcare to one all.<br>➌ To serve with a patient's first motto and to work towards a patient- centered care.<br>➍ To be the centre of excellence for medical research and academics.</p>
+		</div>
+
+
+	</div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
